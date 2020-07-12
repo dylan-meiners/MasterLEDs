@@ -1,0 +1,13 @@
+code   |description                 |example
+=======+============================+======================================================
+p      |send to c++                 |cHello c++!
+-------+----------------------------+------------------------------------------------------
+j      |send to javascript          |jGood Morning javascript :)
+-------+----------------------------+------------------------------------------------------
+s      |send to server              |sHi Server who controls us all!
+-------+----------------------------+------------------------------------------------------
+v      |validation                  |vp (for validate this id as python)
+
+
+C++ to frontend data:
+leftPos-rightPos-leftDirection-rightDirection-arduinoConnectionStatus

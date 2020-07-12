@@ -1,0 +1,22 @@
+{
+  "name": "MasterLEDs",
+  "version": "0.1.0",
+  "description": "Control LEDs like a boss",
+  "main": "main.js",
+  "author": "Dylan Meiners",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "canvas": "^2.6.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jsdom": "^15.2.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-packager": "^15.0.0"
+  }
+}

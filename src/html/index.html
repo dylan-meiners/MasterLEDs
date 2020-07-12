@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../../node_modules/socket.io-client/dist/socket.io.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+        <title>MasterLEDs</title>
+    </head>
+    <body>
+        <div class="utils">
+            <button class="util power"></button>
+            <button class="intensity util ir">+</button>
+            <button class="intensity util il">-</button>
+        </div>
+    <div class="content">
+            <div class="inner-content">
+                <!--<input type="color" class="rgb" name="rgb" value="#ff0000">-->
+                <div class="main">
+                    <h1>Solid</h1>
+                    <button class="solid use active" name="solid-use">Activate</button>
+                    <br>
+                    <div class="input-cont">
+                        <span>Color</span>
+                        <input type="color" id="rgb" class="rgb color-input" name="rgb">
+                    </div>
+                    <hr>
+
+                    <h1>Wave</h1>
+                    <button class="wave use" name="solid-use">Activate</button>
+                    <br>
+                    <div class="input-cont">
+                        <span>Seconds between full cycle</span>
+                        <input type="text" id="wave-rate-selector" class="wave-rate-selector num-input" name="wave-rate">
+                    </div>
+                    <hr>
+
+                    <h1>Trail</h1>
+                    <button class="trail use" name="solid-use">Activate</button>
+                    <br>
+                    <div class="input-cont">
+                        <span>Milliseconds between worms</span>
+                        <input type="text" id="trail-speed" class="trail-speed num-input" name="trail-speed">
+                    </div>
+                    <div class="input-cont">
+                        <span>Color</span>
+                        <input type="color" id="trail-color" class="trail-color color-input" name="trail-speed">
+                    </div>
+                    <button class="trail-direction toggle-button" name="trail-direction">Direction: out (toggle)</button>
+                    <hr>
+
+                    <h1>Morse</h1>
+                    <button class="morse use" name="solid-use">Activate</button>
+                    <br>
+                    <div class="input-cont">
+                        <span>Text to flash</span>
+                        <input type="text" id="morse-text" class="morse-text text-input" name="morse-text">
+                    </div>
+                    <div class="input-cont">
+                        <span>Milliseconds for each dot</span>
+                        <input type="text" id="morse-dot-ms" class="morse-dot-ms num-input" name="morse-dot-ms">
+                    </div>
+                    <div class="input-cont">
+                        <span>Milliseconds for each dash</span>
+                        <input type="text" id="morse-dash-ms" class="morse-dash-ms num-input" name="morse-dash-ms">
+                    </div>
+                    <div class="input-cont">
+                        <span>Milliseconds between each dot or dash</span>
+                        <input type="text" id="morse-space-ms" class="morse-space-ms num-input" name="morse-space-ms">
+                    </div>
+                    <div class="input-cont">
+                        <span>Milliseconds between each letter</span>
+                        <input type="text" id="morse-space-letter-ms" class="morse-space-letter-ms num-input" name="morse-space-letter-ms">
+                    </div>
+                </div>
+                <div class="connections">
+                    <p>
+                        <span class="title">Javascript connection to server:</span>
+                        <span class="js_conn status bad">Disconncted</span>
+                    </p>
+                    <p>
+                        <span class="title">Backend connection to Server:</span>
+                        <span class="c_conn status bad">Disconncted</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

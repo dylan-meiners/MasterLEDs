@@ -1,0 +1,10 @@
+.vscode/*
+src/cpp/Backend/.vs/*
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+MasterLEDs/*
+src/cpp/Backend/Debug/*
+*.sln
+node_modules/*
+*.code-workspace
